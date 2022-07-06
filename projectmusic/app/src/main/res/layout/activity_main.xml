@@ -4,129 +4,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@mipmap/bg1">
+    >
 
-    <RelativeLayout
+    <fragment
+        android:id="@+id/list_fragment"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginTop="90dp"
+        android:name="com.example.projectmusic.list_fragment"
+
         >
-        <ListView
-            android:id="@+id/ListView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="#33EEEEEE"
-            ></ListView>
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/local_music_bottomlayout"
-        android:background="#33EEEEEE"
-       >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#9933FA">
-            </ImageView>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/music"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/local_music_iv_icon">
-        </ImageView>
-        <TextView
-            android:id="@+id/local_music_tv_song"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="歌曲名称"
 
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="110dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
 
-            ></TextView>
-        <TextView
-            android:id="@+id/local_music_tv_singer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="歌手"
 
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="110dp"
-            android:textSize="15sp"
-            android:textStyle="bold"
 
-            ></TextView>
-        <ImageView
-        android:id="@+id/local_music_bottom_iv_next"
+    </fragment>
 
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        android:src="@mipmap/right"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="1dp"
 
-        ></ImageView>
-        <ImageView
-            android:id="@+id/local_music_bottom_iv_stop"
-
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="20dp"
-            android:src="@mipmap/stop"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="80dp"
-
-            ></ImageView>
-        <ImageView
-            android:id="@+id/local_music_bottom_iv_left"
-
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="20dp"
-            android:src="@mipmap/left"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="160dp"
-            ></ImageView>
-
-    </RelativeLayout>
-   <LinearLayout
+   <fragment
+       android:id="@+id/search_fragment"
        android:layout_width="match_parent"
        android:layout_height="70dp"
        android:layout_margin="8dp"
        android:background="#33EEEEEE"
        android:orientation="vertical"
+       android:name="com.example.projectmusic.search_fragment"
        >
 
-   </LinearLayout>
 
-
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:iconifiedByDefault="false"
-        android:queryHint="请输入搜索内容">
-
-
-
-        <ImageView
-            android:id="@+id/select_p01"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="6dp"
-            android:layout_marginRight="1dp"
-            android:src="@mipmap/saomiao" />
-
-    </SearchView>
+</fragment>
 
 
 </RelativeLayout>
